@@ -12,6 +12,7 @@ body {
   color: #27270a;
 }
 
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -47,6 +48,16 @@ body {
   border: none;
   color: white;
   cursor: pointer;
+}
+
+.marco {
+  border: 3px solid #4d4c3d;  /* Color del marco */
+  padding: 1rem;              /* Espacio interno */
+  border-radius: 10px;        /* Bordes redondeados */
+  background-color: #f1ee1a;  /* Fondo suave para resaltar */
+  text-align: center;         /* Centrado del texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin-bottom: 2rem;
 }
 
 /* Secciones */
@@ -85,3 +96,4 @@ footer {
     margin: 1rem 0;
   }
 }
+
