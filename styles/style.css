@@ -9,7 +9,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background-color: #f9f9f9;
-  color: #333;
+  color: #27270a;
 }
 
 /* Navbar */
@@ -17,8 +17,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222;
-  color: #fff;
+  background-color: #f8f40f;
+  color: #121309;
   padding: 1rem;
   position: sticky;
   top: 0;
