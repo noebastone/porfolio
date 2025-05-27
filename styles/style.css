@@ -8,76 +8,55 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  background-color: #b3b3b3;
-  color: #27270a;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('../assets/images/blacksmith-1310850_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #222;
 }
 
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f8f40f;
-  color: #121309;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo {
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-links a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.hamburger {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-}
-
+/* Títulos destacados */
 .marco {
-  border: 3px solid #838279;  /* Color del marco */
-  padding: 1rem;              /* Espacio interno */
-  border-radius: 10px;        /* Bordes redondeados */
-  background-color: #fffb00;  /* Fondo suave para resaltar */
-  text-align: center;         /* Centrado del texto */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  border: 3px solid #838279;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fffb00;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 }
 
 .marco2 {
-  display: inline-block;              /* Hace que el marco se ajuste al tamaño del contenido */
-  border: 3px solid #90918b;  /* Color del marco */
-  padding: 1rem;              /* Espacio interno */
-  border-radius: 10px;        /* Bordes redondeados */
-  background-color: #fff700;  /* Fondo suave para resaltar */
-  text-align: center;         /* Centrado del texto */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  display: inline-block;
+  border: 3px solid #90918b;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fff700;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 }
 
 /* Secciones */
 section {
   padding: 4rem 1.5rem;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 
+/* Mapa */
+.mapa {
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -85,33 +64,3 @@ footer {
   color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #222;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 1rem 0;
-  }
-}
-
-.mapa {
-  max-width: 600px;
-  margin: 2rem auto; /* auto centra horizontalmente */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
